@@ -1,0 +1,21 @@
+server:
+  port: 8084
+  # Database configuration props
+  datasource:
+    url: jdbc:mysql://localhost:3306/g-user-auth-db?createDatabaseIfNotExist=true&userSSL=false&useUnicode=true&useJDBCCompliantTimezones
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      encoding: UTF-8
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  jpa:
+    database: mysql
+    show-sql: false
+
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
