@@ -22,6 +22,7 @@ spring:
     config:
       import-check:
         enabled: false
+      uri: http://localhost:9101/
 eureka:
   client:
     serviceUrl:
