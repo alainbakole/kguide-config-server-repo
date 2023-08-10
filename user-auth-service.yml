@@ -19,3 +19,9 @@ server:
     hibernate:
       ddl-auto: update
       dialect: org.hibernate.dialect.MySQL5Dialect
+
+spring:
+  cloud:
+    config:
+      import-check:
+        enabled: false
