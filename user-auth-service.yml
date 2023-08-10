@@ -1,5 +1,6 @@
 server:
   port: 8084
+spring:
   datasource:
     url: jdbc:mysql://localhost:3306/g-user-auth-db?createDatabaseIfNotExist=true&userSSL=false&useUnicode=true&useJDBCCompliantTimezones
     username: root
@@ -17,7 +18,6 @@ server:
     hibernate:
       ddl-auto: update
       dialect: org.hibernate.dialect.MySQL5Dialect
-spring:
   cloud:
     config:
       import-check:
