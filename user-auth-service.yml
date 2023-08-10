@@ -1,7 +1,7 @@
 server:
   port: 8084
   datasource:
-    url: jdbc:mysql://localhost:3306/g-user-auth-db
+    url: jdbc:mysql://localhost:3306/g-user-auth-db?createDatabaseIfNotExist=true&userSSL=false&useUnicode=true&useJDBCCompliantTimezones
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -22,3 +22,7 @@ spring:
     config:
       import-check:
         enabled: false
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9102/eureka/
